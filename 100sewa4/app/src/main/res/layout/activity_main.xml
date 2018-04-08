@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.a100sewa.a100sewa.MainActivity">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="194dp"
+            android:src="@drawable/logo" />
+
+
+    </LinearLayout>
+   <LinearLayout
+       android:orientation="horizontal"
+       android:weightSum="2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true"
+       android:id="@+id/linearLayout3">
+
+       <info.hoang8f.widget.FButton
+           android:id="@+id/btnSignUp"
+           android:text="SignUp"
+           android:textcolor="@android:color/white"
+           android:layout_weight="0.97"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           app:shadowcolor="@android:color/black"
+           android:layout_margin="8dp"
+           app:buttonColor="@color/btnSignUp"
+           app:shadowEnabled="true"
+           app:shadowHeight="5dp"
+           app:cornerradius="4dp"
+           />
+
+       <info.hoang8f.widget.FButton
+           android:id="@+id/btnSigIn"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_margin="8dp"
+           android:layout_weight="0.92"
+           android:text="Sign In"
+           android:textcolor="@android:color/white"
+           app:buttonColor="@color/btnSignActive"
+           app:cornerradius="4dp"
+           app:shadowEnabled="true"
+           app:shadowHeight="5dp"
+           app:shadowcolor="@android:color/black" />
+
+   </LinearLayout>
+
+    <Switch
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_weight="1"
+        android:text="Skip"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

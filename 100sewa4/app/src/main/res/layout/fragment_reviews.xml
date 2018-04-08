@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.a100sewa.a100sewa.Reviews">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.mancj.material.searchbar.MaterialSearchBar
+        android:layout_width="match_parent"
+        android:layout_height="warp_content"
+        android:id="@+id/searchBar"
+        app:mt_speechMode="false"
+        app:mt_hint="Enter your product "
+        android:layout_alignParentTop="true" />
+
+
+</RelativeLayout>
